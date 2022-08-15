@@ -17,7 +17,7 @@ body{
 
     /* Alinhamento vertical */
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .item{
@@ -31,10 +31,21 @@ body{
     background-color: #ccc;
     border: 2px solid blue;
     height: 50px;
-    flex-basis: 10px;
+
+    /* flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+     */
+
+    /* shorthand para item */
+    flex: 1 1 50px;
+
+    /* Grow shrink e basis */
+
+
 }
 
-#item-1{
+/* /* #item-1{
     flex-grow: 2;
 }
 
@@ -45,4 +56,18 @@ body{
 
 #item-2{
     flex-basis: 100px;
+} */
+
+/* #item-3{
+    flex-shrink: 2;
+}  */
+
+#item-2{
+    order:1;
+}
+#item-2{
+    order:2;
+}
+#item-2{
+    order:3;
 }
